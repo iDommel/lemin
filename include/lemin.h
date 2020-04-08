@@ -11,7 +11,7 @@
 #include "../lib/my/my.h"
 #include "../lib/lists/lists.h"
 
-#define SUCCESS_CODE 0
-#define FAILURE_CODE 84
+#define SUCCESS_CODE (0)
+#define FAILURE_CODE (84)
 
 #endif /* !LEMIN_H_ */

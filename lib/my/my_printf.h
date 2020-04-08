@@ -2,7 +2,7 @@
 ** EPITECH PROJECT, 2019
 ** MY_PRINTF_H
 ** File description:
-** Header for my printf
+** Header for my_printf
 */
 
 #ifndef MY_PRINTF_H
