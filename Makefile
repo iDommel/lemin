@@ -27,7 +27,13 @@ YELLOW	=	"\e[33m"
 # Source Files #
 ################
 
-SRC	=	lemin.c
+TRANSFO_FOLD	=	src/file_transform
+TRANSFO_SRC	=	$(TRANSFO_FOLD)/create_hantill.c	\
+				$(TRANSFO_FOLD)/create_nodes.c	\
+				$(TRANSFO_FOLD)/dig_tunnels.c
+
+SRC	=	lemin.c	\
+		$(TRANSFO_SRC)
 
 OSRC	=	$(SRC:.c=.o)
 
