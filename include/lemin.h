@@ -24,6 +24,7 @@ void command_check(char **file, list_t *node_list, int rank, list_data_t *node);
 void create_node_in_list(char **file, list_t *node_list, int rank);
 int n_first_char_equal(int n, char *one, char *two);
 int check_nbr_of_args(char *src, int nbr_expected, char split);
+void destroy_node_list(list_t *node_list);
 list_t *create_anthill(char **file);
 
 #endif /* !LEMIN_H_ */

@@ -27,8 +27,6 @@ char *get_descriptor(char *line)
 list_data_t *basic_node_create(char **file, list_t *node_list, int rank,
 list_data_t *node)
 {
-    char *line = file[rank];
-
     node = malloc(sizeof(list_data_t));
     node->node = malloc(sizeof(node_t));
     node->node->linked_nodes = NULL;

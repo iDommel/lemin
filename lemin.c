@@ -30,5 +30,6 @@ int lemin(void)
     list_t *node_list = create_anthill(file);
     if (node_list == NULL)
         return (FAILURE_CODE);
+    destroy_node_list(node_list);
     return (SUCCESS_CODE);
 }

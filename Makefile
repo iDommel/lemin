@@ -30,7 +30,8 @@ YELLOW	=	"\e[33m"
 TRANSFO_FOLD	=	src/file_transform
 TRANSFO_SRC	=	$(TRANSFO_FOLD)/create_hantill.c	\
 				$(TRANSFO_FOLD)/create_nodes.c	\
-				$(TRANSFO_FOLD)/dig_tunnels.c
+				$(TRANSFO_FOLD)/dig_tunnels.c	\
+				$(TRANSFO_FOLD)/destroy_node_list.c
 
 SRC	=	lemin.c	\
 		$(TRANSFO_SRC)
