@@ -91,6 +91,7 @@ all: $(OSRC) $(OSRC_M) lib
 	@$(CC) $(IFLAGS) -o $(NAME) $(OSRC) $(OSRC_M) $(LFLAGS) &&	\
 	$(ECHO) $(GREEN) "Compilation Done" $(DEFAULT) ||	\
 	$(ECHO) $(RED) "Compilation Fail" $(DEFAULT)
+	make clean
 
 lib:
 ifeq ($(MAKECMDGOALS), re)
