@@ -36,10 +36,12 @@ void dig_tool(char *tmp_one, char *tmp_two, list_t *cursor_one
 {
     free(tmp_one);
     free(tmp_two);
-    if (cursor_one->data->node->linked_nodes == NULL)
+    if (cursor_one->data->node->linked_nodes == NULL) {
         cursor_one->data->node->linked_nodes = create_list();
-    if (cursor_two->data->node->linked_nodes == NULL)
+    }
+    if (cursor_two->data->node->linked_nodes == NULL) {
         cursor_two->data->node->linked_nodes = create_list();
+    }
 }
 
 void dig_tunnels_in_list(char **file, list_t *root, int rank)

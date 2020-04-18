@@ -125,7 +125,7 @@ coverage:
 clean:
 	@find -type f -name "*~" -delete &&	\
 	find -type f -name "#*#" -delete &&	\
-	find -type f -name "*.o" -delete&&	\
+	find -type f -name "*.o" -delete &&	\
 	$(ECHO) $(YELLOW) "Clean Done" $(DEFAULT)
 
 fclean: clean
@@ -135,7 +135,7 @@ fclean: clean
 	find -type f -name "*.a" -delete &&	\
 	find -type f -name "*.gcno" -delete &&	\
 	find -type f -name "*.gcda" -delete &&	\
-	find -type f -name "vgcore.*" -delete &&	\
+	find -type f -name "vgcore.*" -delete &&\
 	$(ECHO) $(YELLOW) "Force Clean Done" $(DEFAULT)
 
 re:	fclean all
